@@ -1,0 +1,525 @@
+/* CSS FOR PLACEMENT AND FONT SIZING */
+
+
+/*-- Font sizing --*/
+.larger { font-size: 400% }
+.bitlarger { font-size: 200%; line-height: normal; }
+.large { font-size: 130%; line-height: normal; }
+.midi { font-size: 85% }
+.small { font-size: 70% }
+.xsmall { font-size: 60% }
+.tiny { font-size: 50% }
+
+.italic{
+	font-style: italic;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/*-- Spacing --*/
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right + * {
+  clear: both;
+}
+
+.pull-bottom {
+position: absolute;
+top: 590px;
+right: 50px;
+color: #8c8c8c
+}
+
+.pull-low {
+position: relative;
+top: 200px;
+line-height: normal;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+
+}
+
+.left-align {
+
+	margin: auto;
+	text-align: left;
+}
+
+.right-align{
+	margin: auto;
+	text-align: right;
+}
+
+
+.pull-left-narrow {
+  float: left;
+  width: 20%;
+}
+
+.pull-right-wide {
+  float: right;
+  width: 75%;
+}
+
+.pull-right-wide + * { clear: both; }
+
+.pull-right-low {
+  position: relative;
+  top: 100px;
+  left: 70px;
+}
+
+.pull-right-low + * { clear: both; }
+
+
+
+/* TITLE SLIDE STYLE */
+
+
+.top-title {
+
+  position: absolute;
+  top: 1%;
+  left:5%;
+
+
+}
+
+.course-title{
+
+  position: absolute;
+  top: 5%;
+  left:51%;
+  width: 45%;
+
+}
+
+.pic-details{
+  position: absolute;
+  bottom:14%;
+  left: 4%;
+  font-family: Fira;
+  color:              #9e4e20
+}
+
+.description{
+  position: absolute;
+  width: 25%;
+  left:61%;
+  top:24%;
+}
+
+.about-me{
+  position:absolute;
+  width: 41%;
+  text-align: justify;
+  bottom: 6%;
+  right: 6.5%;
+/*    border-color: black;
+  border: solid 1px;
+  border-radius: 10px;*/
+
+}
+
+
+/*-- BACKGROUNDS AND SPECIFIC SLIDE STYLING --*/
+
+/* title slide */
+
+.bg_3birds {
+  position: relative;
+  background-color: #F5EEE5;
+  z-index: 1;
+}
+
+.bg_3birds::before {    
+      content: "";
+      background-image: url('images/bg/three-birds.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #F5EEE5;
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      bottom: 0px;
+      left: 0%;
+      opacity: 0.17;
+      z-index: -1;
+}
+
+
+.bg_3birds img {
+  position: absolute;
+  left: 7.6%;
+  width: 36%;
+  bottom: 24%;
+}
+
+
+/*slide two*/
+
+.bg_peacock {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_peacock::before {    
+      content: "";
+      background-image: url('images/bg/koson-peacock.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+      z-index: -1;
+}
+
+.explainer1{
+  position:absolute;
+  font-size:         22px;
+  color:              #5c120d;
+  line-height:        1.2em;
+  font-family: Fira;
+  width: 82%;
+  text-align: justify;
+  top: 5.5%;
+  left: 10%;
+}
+
+.explainer2{
+  position:absolute;
+    font-size:         22px;
+  color:              #5c120d;
+  line-height:        1.2em;
+  font-family: Fira;
+  left: 2%;
+  text-align: justify;
+  width: 82%;
+  bottom: 8%;
+    left: 10%;
+}
+
+.talkpic {
+  position: absolute;
+  left:40%;
+  top:21%;
+}
+
+
+/*slide three*/
+
+
+.bg_sting {
+  position: relative;
+  z-index: 1;
+  background-color: #F4EFEF;
+}
+
+.bg_sting::before {    
+      content: "";
+      background-image: url('images/bg/sting.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #F4EFEF;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 10px;
+      left: 0px;
+      opacity: 0.3;
+      z-index: -1;
+}
+
+/*.bg_sting img {
+  border-color: black;
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+
+}*/
+
+.img1 {
+   position: absolute;
+  left: 2%;
+  top: 6%;
+
+}
+
+.img2 {
+  position: absolute;
+  bottom: 7%;
+  left: 8%;
+  z-index: 2;
+
+}
+
+.img3 {
+  position: absolute;
+  bottom: 12%;
+  left: 12%;
+  z-index: 1;
+
+}
+
+
+.stingtext1{
+  background-color: #F1E3E4;
+  position: absolute;
+  text-align: justify;
+  width: 35%;
+  border-radius: 10px;
+  padding-right: 2%;
+  padding-left: 2%;
+      font-size:         20px;
+  color:              #5c120d;
+  line-height:        1.2em;
+  font-family: Fira;
+  top:13%;
+  left: 57%;
+}
+
+
+.stingtext2{
+  background-color: #F1E3E4;
+  position: absolute;
+  text-align: justify;
+  width: 35%;
+  border-radius: 10px;
+  left: 30%;
+  padding-right: 2%;
+  padding-left: 2%;
+      font-size:         20px;
+  color:              #5c120d;
+  line-height:        1.2em;
+  font-family: Fira;
+  bottom: 9%;
+left: 57%;
+}
+
+.bring-lower{
+  position: absolute;
+  bottom: 43%;
+  right: 10%;
+}
+
+.bring-right{
+  position: absolute;
+  right: 10%;
+}
+
+
+
+
+
+/*-- LINK STYLING --*/
+
+a {
+  color:              #1b3620;
+  border-bottom:      0px;
+  text-decoration: none;
+  line-height:        1.5em;
+}
+
+a:hover {
+  border-bottom:      0px;
+}
+
+/*-- HEADINGS --*/
+.remark-slide-content h1 {
+  color:              #4b6640;
+  font-size:          35px;
+  line-height:        1em;
+}
+
+.remark-slide-content h2 {
+  font-size:          35px;
+  color:              #5c120d;
+  line-height:        1em;
+  font-family: Fira;
+}
+
+.remark-slide-content h3 {
+  font-size:          28px;
+  color:              #5c120d;
+  line-height: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*-- PARAGRAPH TEXT --*/
+.remark-slide-content {
+  font-size:          20px;
+  line-height:        1em;
+  font-family: "Charter-Racket", serif;
+  color: #2b2b2b
+}
+
+.remark-slide-content ol {
+  line-height: normal;
+}
+
+/*-- HORIZONTAL BARS --*/
+hr {
+  content:            none;
+  display:            block;
+  border:             none;
+  background-color:   #231F20;
+  height:             0.08em;
+}
+
+/*-- BOTTOM-OF-SLIDE PROPERTIES --*/
+
+/*-- Footnote --*/
+.footnote-light {
+  position: absolute;
+  bottom: 0.4em;
+  right: 1em;
+  font-size: 65%;
+  line-height: 1.3em;
+  font-style: italic;
+}
+
+.footnote-dark {
+  position: absolute;
+  bottom: 0.2em;
+  left: 2em;
+  font-size: 65%;
+  line-height: 1.3em;
+  color: #FFFFFF;
+  width: 15%;
+}
+
+/*-- Slide number --*/
+.remark-slide-number {
+  color:              #000000;
+}
+
+/*-- CODE TEXT --*/
+
+/*-- In-line highlighting within text --*/
+.remark-code, .remark-inline-code {
+  font-size:          90%;
+  font-weight:        400;
+  color:              #e9e9e9;
+  background:         #E8EDEE;
+  border-radius:      3px;
+  padding:            1px 1px 1px 1px;
+  opacity: 0.85;
+}
+
+/*-- Line highlighting within code --*/
+.remark-code-line-highlighted {
+  background-color:   #d9e49d;
+  color: #000000;
+}
+
+/*-- CODE CHUNKS --*/
+
+/*-- Code chunk background layer --*/
+pre {
+  /*border: 2px solid rgba(204, 189, 204, 0.8); /* code chunk border*/
+  border:             none;
+  box-shadow:         2px 2px 2px 2px #eee;
+  padding:            0.1em;                    /* padding between code chunk and border */
+  background:          #577457;
+  overflow-x:         auto;                     /* enable horizontal scrolling with overflow */
+  border-radius:      1px;                      /* modify rounding of corners*/
+  opacity: 0.9;
+}
+
+/*--  --*/
+pre code {
+  background:          none;
+  font-size:           18px !important;
+}
+
+/*-- TABLES --*/
+.remark-slide table {
+  margin:              auto;
+  border-top:          2px solid goldenrod;
+  border-bottom:       2px solid goldenrod;
+
+}
+
+th {
+  font-size: 20px;
+  line-height: normal;
+  text-align: right;
+
+  
+}
+
+td {
+  text-align: right;
+  padding-left: 5em;
+  padding-bottom: 1em;
+}
+
+
+/*-- BLOCK QUOTE --*/
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0px 0px 0px 0px;
+  border-left: solid 5px #000000;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+
+
+.border {
+  display: block;
+  position: relative;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin: 28px -35px 28px -35px;
+  border-left: solid 5px #000000;
+
+}
+
+.border-opaque {
+  display: block;
+  position: relative;
+  padding: 5px;
+  background: #9fd1e3;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin: 150px 0px 0px 200px;
+  border-left: solid 5px #000000;
+
+}
+
+
+/*-- Hides slide number --*/
+.remark-slide-number {
+  display:             none;
+}
+
+/*-- CUSTOM CLASSES FOR TEXT EMPHASIS --*/
+.blue       { color:   #005EB8 }
+.green      { color:   #009639 }
+.pink       { color:   #AE2573 }
+.red        { color:   #DA291C }
+.warmyellow { color:   #FFB81C }
+.gold       { color:   #b0a402;}
+.brown      {color: #5c120d;}
+.lightbrown {color:  #9e4e20}
+.opaque		{ opacity: 0}
